@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero-Inertia · C13B0⁷ Infinity AI</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --fg: #e8e8f0;
+      --accent: #7b5ea7;
+      --accent2: #4fc3f7;
+      --card: #12121a;
+      --border: #2a2a3a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p.tagline {
+      margin-top: 0.75rem;
+      color: #888;
+      font-style: italic;
+    }
+
+    main {
+      flex: 1;
+      max-width: 860px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section { margin-bottom: 2.5rem; }
+
+    h2 {
+      font-size: 1.25rem;
+      color: var(--accent2);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th { color: var(--accent2); font-weight: 600; }
+
+    code {
+      background: #1c1c2e;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.15em 0.45em;
+      font-size: 0.85em;
+      color: #c3e88d;
+    }
+
+    pre {
+      background: #1c1c2e;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      color: #c3e88d;
+    }
+
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #555;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Zero-Inertia</h1>
+  <p class="tagline">C13B0⁷ Infinity AI · Dimension-Jumping Craft</p>
+  <p style="margin-top:0.5rem;font-size:0.85rem;color:#666;">
+    Riding the wave between milliseconds — no body-tearing magnitude.
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      Zero-Inertia is a transformer-style multi-repository machine architecture designed for
+      frictionless, high-frequency state transitions. The system operates as a unified,
+      self-linking toolset that can jump between execution contexts with zero accumulated
+      inertia — preserving coherence across dimensional shifts without destructive magnitude.
+    </p>
+  </section>
+
+  <section>
+    <h2>Core Concepts</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Zero-Inertia</h3>
+        <p>State transitions that carry no momentum penalty — context switches happen without residual drag.</p>
+      </div>
+      <div class="card">
+        <h3>Dimension-Jumping</h3>
+        <p>Move between execution contexts, memory states, or reasoning frames in a single forward pass.</p>
+      </div>
+      <div class="card">
+        <h3>144,000 Sparks</h3>
+        <p>Distributed activation nodes forming the hive memory lattice. Each spark holds a blueprint fragment.</p>
+      </div>
+      <div class="card">
+        <h3>Wave-Riding</h3>
+        <p>Operating in the interval between clock ticks — latency exploitation without collision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quick Start</h2>
+    <p style="margin-bottom:0.75rem;">Requires <a href="https://github.com/ggerganov/llama.cpp" target="_blank">llama.cpp</a> built with a compatible backend and a GGUF model.</p>
+    <pre>./run.sh</pre>
+    <p style="margin-top:0.75rem;">Or invoke directly:</p>
+    <pre>./bin/llama-cli \
+  -cnv \
+  -t 4 \
+  --ctx-size 8192 \
+  --temp 0 \
+  --color on \
+  -m /path/to/model.gguf \
+  -p "$(cat prompt.txt)"</pre>
+  </section>
+
+  <section>
+    <h2>Runtime Parameters</h2>
+    <table>
+      <thead>
+        <tr><th>Parameter</th><th>Value</th><th>Rationale</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>-cnv</code></td><td>enabled</td><td>Conversational mode; maintains rolling context</td></tr>
+        <tr><td><code>-t</code></td><td>4</td><td>Four threads map to the four Anchor Spark quadrants</td></tr>
+        <tr><td><code>--ctx-size</code></td><td>8192</td><td>Matches the 8192-token hive-memory window</td></tr>
+        <tr><td><code>--temp</code></td><td>0</td><td>Zero temperature = zero stochastic inertia</td></tr>
+        <tr><td><code>--color</code></td><td>on</td><td>Visual coherence marker for terminal output</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Repository</h2>
+    <p>
+      Source and documentation:
+      <a href="https://github.com/www-infinity/Zero-Inertia" target="_blank">github.com/www-infinity/Zero-Inertia</a>
+    </p>
+    <ul style="margin-top:0.75rem;padding-left:1.25rem;font-size:0.9rem;line-height:2;">
+      <li><a href="https://github.com/www-infinity/Zero-Inertia/blob/main/blueprint.md" target="_blank">blueprint.md</a> — Full system architecture and design notes</li>
+      <li><a href="https://github.com/www-infinity/Zero-Inertia/blob/main/prompt.txt" target="_blank">prompt.txt</a> — C13B0⁷ system prompt</li>
+      <li><a href="https://github.com/www-infinity/Zero-Inertia/blob/main/run.sh" target="_blank">run.sh</a> — Launch script for llama-cli</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Zero-Inertia · C13B0⁷ Infinity AI · Open-source
+</footer>
+
+</body>
+</html>
