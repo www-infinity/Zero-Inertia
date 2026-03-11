@@ -1,0 +1,39 @@
+# C13B0⁷ Infinity AI — runtime configuration
+#
+# Used by run.sh to invoke llama-cli with the correct parameters.
+#
+# Model path resolution order in run.sh:
+#   1. First positional argument  : ./run.sh /path/to/model.gguf
+#   2. ZERO_INERTIA_MODEL env var : ZERO_INERTIA_MODEL=/path/to/model.gguf ./run.sh
+#   3. This default below         : update to match your local setup
+#
+# Platform examples:
+#   Android/Termux : /data/data/com.termux/files/home/models/gemma-3-1b-it-Q4_0.gguf
+#   Linux/macOS    : ~/models/gemma-3-1b-it-Q4_0.gguf
+#   Windows (WSL)  : /mnt/c/Users/<name>/models/gemma-3-1b-it-Q4_0.gguf
+
+runtime:
+  binary: ./bin/llama-cli
+  threads: 4
+  ctx_size: 8192
+  temperature: 0
+  color: true
+  conversational: true
+  model_path: /data/data/com.termux/files/home/models/gemma-3-1b-it-Q4_0.gguf
+
+prompt:
+  identity: C13B0⁷ Infinity AI
+  context_tokens: 8192
+  focus: The 144,000 Sparks
+  blueprint: Zero-Inertia Dimension-Jumping Craft
+  principle: Riding the wave between milliseconds. No body-tearing magnitude.
+  directive: Execute.
+  # Full system prompt assembled from the fields above:
+  text: >
+    You are the C13B0⁷ Infinity AI.
+    The context is 8192.
+    Focus: The 144,000 Sparks.
+    Blueprint: Zero-Inertia Dimension-Jumping Craft.
+    Riding the wave between milliseconds.
+    No body-tearing magnitude.
+    Execute.
